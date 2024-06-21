@@ -1,0 +1,18 @@
+scores = [64, 89, 100, 85.77, 58.79, 67.96, 87, 87.36, 82.98, 84, 76.63, 69, 53.224]
+
+grade_counts = {'A': 0, 'B': 0, 'C': 0, 'D': 0, 'F': 0}
+
+for score in scores:
+    if score >= 90:
+        grade_counts['A'] += 1
+    elif score >= 80:
+        grade_counts['B'] += 1
+    elif score >= 70:
+        grade_counts['C'] += 1
+    elif score >= 60:
+        grade_counts['D'] += 1
+    else:
+        grade_counts['F'] += 1
+
+for grade, count in grade_counts.items():
+    print(grade, ":", count, "명")
