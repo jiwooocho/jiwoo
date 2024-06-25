@@ -1,0 +1,5 @@
+number=int(input("수를 입력하세요:"))
+if number%2==1:
+    print(number,"홀수 입니다.")
+else:
+    print(number,"짝수 입니다.")
