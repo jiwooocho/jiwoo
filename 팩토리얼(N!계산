@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    long long result = 1;
+
+    printf("0 이상 20 이하의 정수 입력: ");
+    scanf("%d", &n);
+
+    if (n < 0 || n > 20) {
+        printf("0부터 20 사이의 숫자를 입력하세요.\n");
+        return 0;
+    }
+
+    for (int i = 1; i <= n; i++) {
+        result *= i;
+    }
+
+    printf("%d! = %lld\n", n, result);
+    return 0;
+}
